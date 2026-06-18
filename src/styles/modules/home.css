@@ -22,6 +22,41 @@ html:has(.home-shell) {
   padding-left: 20px;
 }
 
+.home-prompt {
+  margin-top: var(--home-size);
+  white-space: pre;
+  line-height: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.home-caret {
+  display: inline-block;
+  width: var(--text-cell);
+  height: calc(var(--home-size) - 2px);
+  vertical-align: -2px;
+  background: var(--accent);
+  box-shadow: 0 0 6px var(--accent-glow);
+  animation: home-caret-blink 1.06s steps(1, end) infinite;
+}
+
+@keyframes home-caret-blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  50.01%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-caret {
+    animation: none;
+  }
+}
+
 .ascii-hero {
   position: relative;
   display: inline-block;

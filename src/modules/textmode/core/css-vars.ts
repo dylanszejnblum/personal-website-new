@@ -8,6 +8,8 @@ export function appearanceCssVariables(config: AppearanceConfig): string {
     "--link": config.colors.link,
     "--link-hover": config.colors.linkHover,
     "--link-hover-bg": config.colors.linkHoverBackground,
+    "--accent": config.colors.accent,
+    "--accent-glow": config.colors.accentGlow,
     "--particle-home": config.colors.particleHome,
     "--particle-home-glow": config.colors.particleHomeGlow,
     "--particle-page": config.colors.particlePage,

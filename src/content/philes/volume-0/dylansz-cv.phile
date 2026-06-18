@@ -1,0 +1,123 @@
+---
+title: "dylansz — CV"
+date: 2026-06-09
+author: "dylansz"
+order: 1
+---
+
+──[ Dylan Szejnblum ]───────────────────────────────────────────────────────[ CV ]
+
+    Buenos Aires, Argentina
+    dylanszejnblum@gmail.com · github.com/dylanszejnblum · @dylansz_
+
+    Spanish (Native) · English (C2) · Portuguese (Fluent)
+
+──[ Summary ]───────────────────────────────────────────────────────────────//───
+
+    Fullstack engineer with 6+ years building data-intensive fintech
+    platforms, trading infrastructure, and production AI applications.
+    Combines strong quantitative finance experience — automated
+    liquidation bots for a Liquity-fork lending protocol, stablecoin
+    platforms processing $8M+ in emerging markets, real-time financial
+    dashboards for trading desks — with deep AI/LLM engineering
+    (LangChain, RAG, model deployment). Recently built an energy
+    intelligence platform for Vaca Muerta (Petrodata.ar) with automated
+    data pipelines and executive dashboards. Strong data analysis with
+    Python, SQL, and time-series modeling.
+
+──[ Experience ]────────────────────────────────────────────────────────────//───
+
+    Petrodata.ar (Buenos Aires, Argentina)
+    2025 · Creator — Energy Data Intelligence
+
+        Built automated Python ETL pipelines ingesting production, well,
+        and pricing data from Argentina's Secretaría de Energía (CKAN
+        API) into a star-schema Postgres model — 80 operators, 85K+
+        wells, 327K monthly records. Integrated live market data (Brent,
+        WTI, Henry Hub via EIA API), FX rates, and rig counts into a
+        unified data layer for energy trading analytics. NestJS REST API
+        + React/Next.js dashboards with animated KPIs, trend analysis,
+        and geospatial well maps.
+
+    W3G / Inspirae.ai — Nini (nonarcisai / getnini.ai) (Remote)
+    2025 — Present · Full-Stack Developer & PM — AI Application
+
+        Led development of a live consumer AI app (iOS/Android): React
+        Native frontend, Node.js microservices on GCP, LangChain/Python
+        AI pipelines for behavioral analysis. Managed team of 3 while
+        hands-on in code. Deployed production LLM inference pipelines
+        with RAG, structured output, and prompt iteration — serving
+        thousands of users.
+
+    VaultTech (Remote)
+    2024 — 2025 · Full Stack Engineer — Lending & Vault Infrastructure
+                  (Liquity fork — NDA)
+
+        Built an automated liquidation bot and event-driven indexing
+        system (subgraphs/GraphQL) for a DeFi lending protocol —
+        monitoring vault collateralization, triggering liquidations, and
+        managing financial risk in real time. Architected the lending
+        product from scratch: Node.js backend, smart contract
+        integration, and React/TypeScript dashboards for vault health
+        and liquidity risk used daily by the operations desk.
+
+    Num Finance (now Twin Finance) (Buenos Aires, Argentina)
+    2023 — 2024 · Full Stack Engineer — Stablecoins & Payments
+
+        Built fullstack products for USD- and FX-pegged stablecoins
+        across Argentina, Brazil, and Mexico — $8M+ in cross-border
+        volume — plus back-office tooling and REST APIs for
+        Pix-to-stablecoin settlement. Created onchain data dashboards
+        tracking supply, liquidity, peg health, and product KPIs across
+        multiple chains, used daily by finance and strategy teams.
+
+    Mangos Wallet (mangos.finance) (Remote)
+    2022 — 2023 · Software Engineer — Consumer Wallet Platform
+
+        Led end-to-end build of a wallet for underbanked users (React,
+        TypeScript, Node.js): Web2 social-login over account-abstraction
+        with integrated yield protocols (AAVE), shipping MVP to
+        production for non-crypto-native users.
+
+    Perro en la Luna (Buenos Aires / Remote)
+    2021 — 2022 · Software Engineer Intern
+
+        Client-facing apps, internal tools, and automated dashboards.
+        Next.js frontend, Nest.js backend.
+
+──[ Awards ]────────────────────────────────────────────────────────────────//───
+
+    Seedstars LATAM x WEF — Winner (2023)
+    AI Agent Platform for Agricultural Management
+    Presented at GIZ (Germany) and WEF (Mexico)
+
+──[ Skills ]────────────────────────────────────────────────────────────────//───
+
+    Languages    : Python, TypeScript, Node.js, SQL, Solidity
+    Data & ETL   : ETL & data pipeline engineering, time-series,
+                   star-schema modeling
+    Fintech      : Real-time financial dashboards, market data
+                   integration (commodities, FX, rates), automated
+                   liquidation/trading systems, vault risk monitoring
+    AI / LLM     : LangChain, production LLM pipelines (RAG, structured
+                   output, prompt engineering), AI agent systems
+    Frontend     : React, Next.js, React Native, Recharts, MapLibre GL
+    Backend      : NestJS, Express, PostgreSQL, Prisma, MongoDB, GCP,
+                   REST/GraphQL APIs
+    Domain       : DeFi lending mechanics, stablecoin operations,
+                   cross-border payments
+
+──[ Education ]─────────────────────────────────────────────────────────────//───
+
+    University of Gothenburg — Engineering Program
+    Gothenburg, Sweden · 2022 — 2023
+
+    University of Buenos Aires (UBA) — Computer Science
+    Buenos Aires, Argentina · 2019 — 2022
+
+    ORT Argentina — IT Technical HS Diploma
+    Buenos Aires, Argentina · 2016 — 2019
+
+    Reference: Ezequiel Gorbatik — CTO, Num Finance · egorbatik@gmail.com
+
+──[ EOF ]──────────────────────────────────────────────────────────────────//───

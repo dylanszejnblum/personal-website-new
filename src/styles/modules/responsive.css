@@ -1,6 +1,15 @@
+/*
+ * --mobile-scale is a pre-hydration / no-JS fallback CEILING only.
+ * The real mobile sizing comes from --fit-scale, which JS measures per
+ * element (.home-shell, .textmode-wrap) against the viewport. Because
+ * zoom: min(--mobile-scale, --fit-scale), keeping --mobile-scale above
+ * each breakpoint's content-fit lets the content-aware fit-scale govern,
+ * so text is as large as it can be while still fitting — instead of the
+ * old hardcoded ladder over-shrinking everything by ~30%.
+ */
 @media (max-width: 760px) {
   :root {
-    --mobile-scale: 0.95;
+    --mobile-scale: 1;
   }
 
   body {
@@ -51,7 +60,7 @@
 
 @media (max-width: 700px) {
   :root {
-    --mobile-scale: 0.86;
+    --mobile-scale: 0.97;
   }
 
   .image-lightbox-frame {
@@ -66,30 +75,30 @@
 
 @media (max-width: 620px) {
   :root {
-    --mobile-scale: 0.76;
+    --mobile-scale: 0.95;
   }
 }
 
 @media (max-width: 540px) {
   :root {
-    --mobile-scale: 0.66;
+    --mobile-scale: 0.93;
   }
 }
 
 @media (max-width: 470px) {
   :root {
-    --mobile-scale: 0.58;
+    --mobile-scale: 0.9;
   }
 }
 
 @media (max-width: 410px) {
   :root {
-    --mobile-scale: 0.52;
+    --mobile-scale: 0.88;
   }
 }
 
 @media (max-width: 360px) {
   :root {
-    --mobile-scale: 0.47;
+    --mobile-scale: 0.85;
   }
 }

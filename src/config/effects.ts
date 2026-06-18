@@ -49,35 +49,35 @@ export const effectsConfig: EffectsConfig = {
     speed: [0.03, 0.085],
     contexts: {
       home: {
-        desktopCount: 86,
-        mobileCount: 38,
-        opacity: [0.3, 0.62],
-        pointerScale: 1
+        desktopCount: 120,
+        mobileCount: 52,
+        opacity: [0.22, 0.58],
+        pointerScale: 1.2
       },
       volume: {
-        desktopCount: 38,
-        mobileCount: 18,
-        opacity: [0.2, 0.44],
+        desktopCount: 48,
+        mobileCount: 22,
+        opacity: [0.18, 0.42],
         pointerScale: 0.72
       },
       article: {
-        desktopCount: 22,
-        mobileCount: 14,
-        opacity: [0.12, 0.28],
+        desktopCount: 28,
+        mobileCount: 16,
+        opacity: [0.1, 0.26],
         pointerScale: 0.45
       }
     }
   },
   homeAsciiGlitch: {
     enable: true,
-    minIntervalMs: 1400,
-    maxIntervalMs: 6800,
-    frameMinMs: 28,
-    frameMaxMs: 110,
-    burstFrameMin: 2,
-    burstFrameMax: 8,
-    mutationRatioMin: 0.018,
-    mutationRatioMax: 0.11,
-    lineShiftChance: 0.52
+    minIntervalMs: 800,
+    maxIntervalMs: 4800,
+    frameMinMs: 20,
+    frameMaxMs: 80,
+    burstFrameMin: 3,
+    burstFrameMax: 12,
+    mutationRatioMin: 0.04,
+    mutationRatioMax: 0.22,
+    lineShiftChance: 0.7
   }
 };

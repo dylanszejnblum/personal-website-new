@@ -40,6 +40,39 @@ a:focus-visible {
   outline: 0;
 }
 
+/* Cursor-like focus: a neon-green terminal ring marks the current position. */
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+  box-shadow: 0 0 6px var(--accent-glow);
+}
+
+/* Matrix-green selection highlight. */
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+/* Thin neon scrollbar to match the terminal palette. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 .textmode-pre {
   margin: 0;
   white-space: pre;

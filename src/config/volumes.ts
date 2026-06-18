@@ -15,7 +15,7 @@ export type VolumeConfig = {
 };
 
 export const defaultVolumeConfig = (number: number): VolumeConfig => ({
-  title: `Entropic Volume ${number}`,
+  title: `dylansz Volume ${number}`,
   listLabel: `Volume ${number}`,
   phileSort: {
     by: "date",
@@ -28,26 +28,34 @@ export const volumeConfigs = new Map<number, VolumeConfig>([
   [
     0,
     {
-      title: "Security Research",
-      listLabel: "Volume 0 - Security Research",
+      title: "Portfolio & CV",
+      subtitle: "Projects, CV, and what I'm building",
+      listLabel: "Portfolio & CV",
       phileSort: {
         by: "order",
         direction: "asc"
       },
+      entryPrefix: "P",
       postscript: [
-        "  ──[ 0x51 ]─────────────────────────────────────────────────────────────────//───",
+        "  ──[ 0x00 ]─────────────────────────────────────────────────────────────────//───",
         "",
-        "  What is this unseen flame of darkness whose sparks are the stars?",
+        "  Built to ship.",
         "",
-        "  Tagore, Stray Birds"
+        "  dylansz"
       ]
     }
   ],
   [
     1,
     {
-      title: "Historical Philes",
-      listLabel: "Volume 1 - Historical Philes",
+      title: "Articles",
+      subtitle: "Write-ups, CTFs, and technical notes",
+      listLabel: "Articles",
+      phileSort: {
+        by: "date",
+        direction: "desc"
+      },
+      entryPrefix: "A",
       postscript: [
         "  ──[ EOF ]──────────────────────────────────────────────────────────────────//───",
         "",
@@ -55,19 +63,14 @@ export const volumeConfigs = new Map<number, VolumeConfig>([
         "  but it must be lived forwards.",
         "",
         "  Søren Kierkegaard"
-      ],
-      phileSort: {
-        by: "date",
-        direction: "desc"
-      },
-      entryPrefix: "A"
+      ]
     }
   ],
   [
     2,
     {
       title: "Year-End Wrap-ups",
-      listLabel: "Volume 2 - Year-End Wrap-ups",
+      listLabel: "Year-End Wrap-ups",
       postscript: [
         "  ──[ 0x146 ]────────────────────────────────────────────────────────────────//───",
         "",
@@ -86,21 +89,21 @@ export const volumeConfigs = new Map<number, VolumeConfig>([
   [
     3,
     {
-      title: "Chromatic Philes",
-      listLabel: "Volume 3 - Chromatic Philes",
+      title: "Experiments",
+      listLabel: "Experiments",
       postscript: [
         "  ──[ SGR ]──────────────────────────────────────────────────────────────────//───",
         "",
         "  Color is only another byte of pressure",
         "  applied to a line that was already executable.",
         "",
-        "  Entropic notes"
+        "  dylansz"
       ],
       phileSort: {
         by: "date",
         direction: "desc"
       },
-      entryPrefix: "C"
+      entryPrefix: "X"
     }
   ]
 ]);

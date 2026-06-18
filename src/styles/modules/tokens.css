@@ -3,9 +3,11 @@
   --bg: #0c0d10;
   --home-bg: #0a0b11;
   --fg: #fefefe;
-  --link: #93ffd7;
-  --link-hover-bg: #153329;
-  --link-hover: #c7ffe9;
+  --link: #7dcfff;
+  --link-hover-bg: #143340;
+  --link-hover: #a8e6ff;
+  --accent: #37f712;
+  --accent-glow: #37f71255;
   --text-font: "gohu";
   --text-size: 14px;
   --cjk-size: 13px;

@@ -1,0 +1,86 @@
+---
+title: "dylansz — Portfolio"
+date: 2026-06-09
+author: "dylansz"
+order: 0
+---
+
+──[ Projects ]──────────────────────────────────────────────────────────────[ 2026 ]
+
+    Here is what I am building right now.
+
+──[ Petrodata.ar ]─────────────────────────────────────────────────────────[ Active ]
+
+    A data platform for Argentina's oil, gas, minerals, and rare-earth
+    sectors. Production data for 76+ operators, 50+ mineral projects,
+    11 O&G provinces. Backend: NestJS + Payload CMS + Neon PostgreSQL.
+    Frontend: Next.js. Dark theme, Bloomberg-meets-Linear data density.
+
+    https://petroldata.ar
+
+──[ Lex Pulse ]─────────────────────────────────────────────────────────────[ Active ]
+
+    A daily legal newsletter + website + job board for Argentina's legal
+    sector. Federal scope (not just Buenos Aires). Expanding to Córdoba,
+    Santa Fe, Mendoza. Database of court rulings, regulatory updates,
+    and legal-sector job listings.
+
+──[ TenderClaw ]────────────────────────────────────────────────────────────[ Active ]
+
+    Government tender scraping and monitoring platform. Multi-channel
+    GTM: cold email, LLM SEO, paid ads, directories, Show HN, Stripe
+    integration. Grey/black hat approach.
+
+──[ Nini ]───────────────────────────────────────────────────────────────────[ Active ]
+
+    AI assistant framework. Multi-agent architecture with persona-based
+    interaction, prompt tuning, evaluation harness, and sandbox testing.
+    Spanish-language reports with English prompt engineering.
+
+──[ AIGrou ]─────────────────────────────────────────────────────────────────[ 2023 ]
+
+    AI agent platform for agricultural management. Won Seedstars LATAM
+    x World Economic Forum. Presented at GIZ (Germany) and WEF (Mexico).
+    Applied data-driven AI to real-world operations for small and medium
+    landowners.
+
+──[ W3G ]────────────────────────────────────────────────────────────────────[ 2025 ]
+
+    Fullstack mobile app (React Native, TypeScript, Node.js, Zustand).
+    Promoted from engineer to product manager. Lead a team of 3, own
+    roadmap, sprint planning, and delivery.
+
+──[ DeFi Zoo / VaultEdge ]──────────────────────────────────────────────────[ 2024 ]
+
+    DeFi lending/vault product. React/TypeScript frontend, Node.js
+    microservices, Wagmi/Viem/Ethers onchain integration. Event-driven
+    subgraphs for blockchain data ingestion. Automated liquidations.
+
+──[ Num Finance → Twin Finance ]─────────────────────────────────────────────[ 2023 ]
+
+    Cross-border stablecoin payments. USD/FX-pegged assets across
+    Argentina, Brazil, Mexico. Pix-to-stablecoin settlement. SQL
+    analytics dashboards for supply, liquidity, and product KPIs.
+
+──[ Mangos Wallet ]──────────────────────────────────────────────────────────[ 2022 ]
+
+    Consumer wallet for underbanked users in emerging markets.
+    Web2-style social auth over AA (account abstraction,
+    ERC-4337). Yield-bearing protocol integration (AAVE).
+    Ownership over key architecture and technical decisions.
+
+──[ Stack ]──────────────────────────────────────────────────────────────────[ 2026 ]
+
+    TS/JS · Python · SQL · React · Next.js · React Native · Node
+    NestJS · Express · REST · GraphQL · MongoDB · PostgreSQL
+    Wagmi · Viem · Ethers · Solidity · The Graph (subgraphs)
+    Astro · Tailwind · Zustand · React Query
+    Fintech · Stablecoins · DeFi · Data Pipelines · AI Agents
+
+──[ Contact ]────────────────────────────────────────────────────────────────//───
+
+    email    : dylanszejnblum@gmail.com
+    github   : github.com/dylanszejnblum
+    x        : @dylansz_
+
+──[ EOF ]──────────────────────────────────────────────────────────────────//───

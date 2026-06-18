@@ -6,6 +6,8 @@ export type AppearanceConfig = {
     link: string;
     linkHover: string;
     linkHoverBackground: string;
+    accent: string;
+    accentGlow: string;
     particleHome: string;
     particleHomeGlow: string;
     particlePage: string;
@@ -32,15 +34,17 @@ export const appearanceConfig: AppearanceConfig = {
     background: "#0c0d10",
     homeBackground: "#0a0b11",
     foreground: "#fefefe",
-    link: "#93ffd7",
-    linkHover: "#c7ffe9",
-    linkHoverBackground: "#153329",
-    particleHome: "#b47ae2",
-    particleHomeGlow: "#6f4b97",
-    particlePage: "#9368b8",
-    particlePageGlow: "#52376f",
-    particleVolume: "#a878d2",
-    particleVolumeGlow: "#68448c"
+    link: "#7dcfff",
+    linkHover: "#a8e6ff",
+    linkHoverBackground: "#143340",
+    accent: "#37f712",
+    accentGlow: "#37f71255",
+    particleHome: "#7dcfff",
+    particleHomeGlow: "#4da6cf",
+    particlePage: "#5fbcdb",
+    particlePageGlow: "#3a7a94",
+    particleVolume: "#6fc8e8",
+    particleVolumeGlow: "#448aa8"
   },
   fonts: {
     asciiFamily: "gohu",

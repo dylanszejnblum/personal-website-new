@@ -19,6 +19,10 @@ const asciiHtml = textHtml(asciiText);
 const asciiAttr = escapeHtml(asciiText);
 
 function renderHomeSection(section: HomeSection, allVolumes: Volume[]): string[] {
+  if (section.columns === 2) {
+    return renderGridSection(section);
+  }
+
   const items = renderHomeItems(section, allVolumes);
 
   if (items.length === 0 && section.volumes?.showEmpty === false) {
@@ -26,6 +30,41 @@ function renderHomeSection(section: HomeSection, allVolumes: Volume[]): string[]
   }
 
   return ["", `~ ${section.title}`, ...items];
+}
+
+function renderGridSection(section: HomeSection): string[] {
+  const items = section.items ?? [];
+  const gapWidth = 3;
+  const colWidth = Math.floor((homeLineWidth - gapWidth) / 2);
+
+  const lines: string[] = ["", `~ ${section.title}`];
+
+  for (let i = 0; i < items.length; i += 2) {
+    const left = renderGridHtml(items[i], colWidth);
+    const right = items[i + 1] ? renderGridHtml(items[i + 1], colWidth) : [];
+    const maxRows = Math.max(left.length, right.length);
+
+    for (let r = 0; r < maxRows; r++) {
+      const lStr = left[r] ?? " ".repeat(colWidth);
+      const rStr = right[r] ?? " ".repeat(colWidth);
+      lines.push(lStr + " ".repeat(gapWidth) + rStr);
+    }
+  }
+
+  return lines;
+}
+
+function renderGridHtml(item: HomeItem, colWidth: number): string[] {
+  const prefix = `  ${item.prefix ?? "~"} `;
+  const labelWidth = Math.max(1, colWidth - cellWidth(prefix));
+  const labelLines = wrapWordsCells(item.label, labelWidth);
+
+  return labelLines.map((labelLine, index) => {
+    const linePrefix = index === 0 ? prefix : " ".repeat(cellWidth(prefix));
+    const labelHtml = index === 0 && item.href ? renderLabel(item, labelLine) : textHtml(labelLine);
+    const padded = labelHtml + " ".repeat(Math.max(0, colWidth - cellWidth(linePrefix + labelLine)));
+    return linePrefix + padded;
+  });
 }
 
 function renderHomeItems(section: HomeSection, allVolumes: Volume[]): string[] {
@@ -109,6 +148,7 @@ function renderLabel(item: HomeItem, label: string): string {
     ></pre>
   </div>
   <PreBlock class="home-pre" html={homeText} />
+  <div class="home-pre home-prompt" aria-hidden="true">  ~ <span class="home-caret"></span></div>
 </section>
 
 <script>
