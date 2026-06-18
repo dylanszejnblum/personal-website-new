@@ -266,10 +266,8 @@ function configuredTextmodeZoomScale(element: HTMLElement): number {
   }
 
   const styles = getComputedStyle(wrapper);
-  const mobileScale = parsePositiveNumber(styles.getPropertyValue("--mobile-scale")) || 1;
-  const fitScale = parsePositiveNumber(styles.getPropertyValue("--fit-scale")) || 1;
-
-  return Math.min(mobileScale, fitScale);
+  // Mirrors the CSS `zoom: var(--fit-scale)` applied to the wrapper on mobile.
+  return parsePositiveNumber(styles.getPropertyValue("--fit-scale")) || 1;
 }
 
 function parseZoom(input: string): number {

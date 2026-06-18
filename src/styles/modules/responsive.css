@@ -1,15 +1,19 @@
 /*
- * --mobile-scale is a pre-hydration / no-JS fallback CEILING only.
- * The real mobile sizing comes from --fit-scale, which JS measures per
- * element (.home-shell, .textmode-wrap) against the viewport. Because
- * zoom: min(--mobile-scale, --fit-scale), keeping --mobile-scale above
- * each breakpoint's content-fit lets the content-aware fit-scale govern,
- * so text is as large as it can be while still fitting — instead of the
- * old hardcoded ladder over-shrinking everything by ~30%.
+ * Mobile sizing is driven by --fit-scale. The breakpoint ladder below sets
+ * a per-width default on :root as a pre-hydration / no-JS fallback. JS then
+ * measures each element (.home-shell, .textmode-wrap) against the viewport
+ * and overrides --fit-scale inline with the exact content-aware scale, so
+ * text is as large as it can be while still fitting.
+ *
+ * NOTE: zoom MUST take a plain `var(--fit-scale)`, never a `min()`/`calc()`
+ * expression. Older iOS Safari does not parse math functions as a value for
+ * the non-standard `zoom` property and silently drops the declaration,
+ * leaving the content unscaled (horizontal overflow). The min() against the
+ * fallback ceiling is therefore done in JS, not CSS.
  */
 @media (max-width: 760px) {
   :root {
-    --mobile-scale: 1;
+    --fit-scale: 1;
   }
 
   body {
@@ -29,12 +33,12 @@
   .textmode-wrap {
     max-width: none;
     overflow-x: visible;
-    zoom: min(var(--mobile-scale), var(--fit-scale));
+    zoom: var(--fit-scale);
   }
 
   .home-shell {
     transform: translateY(-6vh);
-    zoom: min(var(--mobile-scale), var(--fit-scale));
+    zoom: var(--fit-scale);
   }
 
   .home-pre,
@@ -60,7 +64,7 @@
 
 @media (max-width: 700px) {
   :root {
-    --mobile-scale: 0.97;
+    --fit-scale: 0.97;
   }
 
   .image-lightbox-frame {
@@ -75,30 +79,30 @@
 
 @media (max-width: 620px) {
   :root {
-    --mobile-scale: 0.95;
+    --fit-scale: 0.95;
   }
 }
 
 @media (max-width: 540px) {
   :root {
-    --mobile-scale: 0.93;
+    --fit-scale: 0.93;
   }
 }
 
 @media (max-width: 470px) {
   :root {
-    --mobile-scale: 0.9;
+    --fit-scale: 0.9;
   }
 }
 
 @media (max-width: 410px) {
   :root {
-    --mobile-scale: 0.88;
+    --fit-scale: 0.88;
   }
 }
 
 @media (max-width: 360px) {
   :root {
-    --mobile-scale: 0.85;
+    --fit-scale: 0.85;
   }
 }
