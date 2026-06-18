@@ -72,8 +72,8 @@ export const siteConfig: SiteConfig = {
           prefix: "~"
         },
         {
-          label: "petroldata.ar",
-          href: "https://petroldata.ar",
+          label: "petrodata.ar",
+          href: "https://petrodata.ar",
           external: true,
           prefix: "~ call"
         },
