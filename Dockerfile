@@ -7,8 +7,10 @@ WORKDIR /app
 # pnpm via corepack (version pinned by package.json "packageManager")
 RUN corepack enable
 
-# Install deps with a warm cache layer
-COPY package.json pnpm-lock.yaml ./
+# Install deps with a warm cache layer.
+# pnpm-workspace.yaml holds overrides/allowBuilds and .npmrc holds peer-dep
+# settings — both are required for a clean frozen install to match the lockfile.
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml .npmrc ./
 RUN pnpm install --frozen-lockfile
 
 # Build the static site (skip the check/lint wrapper used in local dev)
